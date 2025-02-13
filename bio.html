@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us - MCQ Pedia</title>
+    <meta name="description" content="Learn about the team behind MCQ Pedia. Discover our mission, vision, and dedication to providing quality multiple-choice questions for learners worldwide.">
+    <meta name="keywords" content="about MCQ Pedia, team, mission, vision, education, learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>MCQ Pride - Biology Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f5f7;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #1d3557, #457b9d);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f1faee !important;
+        }
+
+        .nav-link {
+            color: #f1faee !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #a8dadc !important;
+        }
+
+        .dropdown-menu {
+            background-color: #1d3557;
+            border-radius: 0.5rem;
+        }
+
+        .dropdown-item {
+            color: #f1faee !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #457b9d;
+            color: #f1faee !important;
+        }
+
+        .hero-section {
+            background: #1d3557;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .subject-buttons {
+            margin-top: 30px;
+        }
+
+        .subject-button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .subject-button:hover {
+            background-color: #f1faee;
+            color: #1d3557;
+            transform: scale(1.1);
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #e9ecef;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="bio.html">Biology</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Subject Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subjectsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Subjects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="subjectsDropdown">
+                            <li><a class="dropdown-item" href="polity.html">Polity</a></li>
+                            <li><a class="dropdown-item" href="geography.html">Geography</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="physics.html">Physics</a></li>
+                            <li><a class="dropdown-item" href="chemistry.html">Chemistry</a></li>
+                            <li><a class="dropdown-item" href="bio.html">Biology</a></li>
+                            <li><a class="dropdown-item" href="basic-electrical.html">Basic Electrical</a></li>
+                            <li><a class="dropdown-item" href="power-system.html">Power System</a></li>
+                            <li><a class="dropdown-item" href="measurement.html">Measurement</a></li>
+                            <li><a class="dropdown-item" href="basic-electronics.html">Basic Electronics</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to MCQ Pride</h1>
+        <p>Choose your subject and start learning with interactive quizzes!</p>
+        <div class="subject-buttons">
+            <button class="subject-button" style="background-color: #ff6347;" onclick="window.location.href='polity.html'">Polity</button>
+            <button class="subject-button" style="background-color: #1e90ff;" onclick="window.location.href='geography.html'">Geography</button>
+            <button class="subject-button" style="background-color: #32cd32;" onclick="window.location.href='history.html'">History</button>
+            <button class="subject-button" style="background-color: #ffda44;" onclick="window.location.href='physics.html'">Physics</button>
+            
+ <button class="subject-button" style="background-color: #ff6347;" onclick="window.location.href='electrical-utilization.html'">Electrical Utilization</button>
+
+            <button class="subject-button" style="background-color: #ff4500;" onclick="window.location.href='chemistry.html'">Chemistry</button>
+            <button class="subject-button" style="background-color: #ffd700;" onclick="window.location.href='bio.html'">Biology</button>
+            <button class="subject-button" style="background-color: #8a2be2;" onclick="window.location.href='basic-electrical.html'">Basic Electrical</button>
+            <button class="subject-button" style="background-color: #00ced1;" onclick="window.location.href='power-system.html'">Power System</button>
+            <button class="subject-button" style="background-color: #adff2f;" onclick="window.location.href='measurement.html'">Measurement</button>
+            <button class="subject-button" style="background-color: #20b2aa;" onclick="window.location.href='basic-electronics.html'">Basic Electronics</button>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container" id="quizContainer">
+        <h2 class="text-center">Biology Quiz</h2>
+        <div class="question" id="question">Loading question...</div>
+        <div id="options" class="mb-3">
+            <!-- Options will be dynamically loaded -->
+        </div>
+        <button class="btn btn-primary" id="nextBtn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About MCQ Pride</h5>
+                    <p>MCQ Pride offers top-notch quizzes to help you excel in competitive exams. Join us to access quality content for your success.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const quizData = [
+            { question: "Which part of the cell contains genetic material?", options: ["Nucleus", "Mitochondria", "Cytoplasm", "Cell Membrane"], correct: 0 },
+            { question: "What is the powerhouse of the cell?", options: ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"], correct: 1 },
+            { question: "Which of these is a type of genetic material?", options: ["RNA", "DNA", "Both", "None"], correct: 2 },
+            { question: "What is the process by which plants make their food?", options: ["Respiration", "Photosynthesis", "Fermentation", "Digestion"], correct: 1 },
+            { question: "Which of the following is a mammal?", options: ["Eagle", "Shark", "Penguin", "Dolphin"], correct: 3 },
+            { question: "What is the basic unit of life?", options: ["Atom", "Molecule", "Cell", "Organ"], correct: 2 },
+            { question: "What does DNA stand for?", options: ["Deoxyribonucleic Acid", "Deoxyribose Nucleic Acid", "Ribonucleic Acid", "Ribosome Nucleic Acid"], correct: 0 },
+            { question: "Which process involves the division of a cell's nucleus?", options: ["Mitosis", "Meiosis", "Cytokinesis", "Fission"], correct: 0 },
+            { question: "What type of blood cells help in immunity?", options: ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"], correct: 1 },
+            { question: "What is the function of chloroplasts?", options: ["Photosynthesis", "Respiration", "Digestion", "Transportation"], correct: 0 },
+{ question: "Which organ is responsible for filtering blood?", options: ["Lungs", "Kidney", "Liver", "Heart"], correct: 1 },
+    { question: "What is the term for the process of cell division in somatic cells?", options: ["Mitosis", "Meiosis", "Binary Fission", "Budding"], correct: 0 },
+    { question: "Which molecule carries oxygen in the blood?", options: ["Hemoglobin", "Insulin", "Glucagon", "Chlorophyll"], correct: 0 },
+    { question: "What is the main component of the human skin?", options: ["Collagen", "Keratin", "Elastin", "Chitin"], correct: 1 },
+    { question: "Which organelle is involved in protein synthesis?", options: ["Mitochondria", "Ribosome", "Nucleus", "Golgi Apparatus"], correct: 1 },
+    { question: "What is the term for the spread of an infection from one person to another?", options: ["Contagion", "Mutation", "Transmission", "Reproduction"], correct: 2 },
+    { question: "What do we call organisms that cannot produce their own food?", options: ["Autotrophs", "Heterotrophs", "Decomposers", "Herbivores"], correct: 1 },
+    { question: "What is the largest part of the human brain?", options: ["Cerebrum", "Cerebellum", "Medulla", "Thalamus"], correct: 0 },
+    { question: "Which part of the plant is responsible for photosynthesis?", options: ["Root", "Leaf", "Stem", "Flower"], correct: 1 },
+    { question: "What is the main function of the large intestine?", options: ["Absorption of nutrients", "Digestion of food", "Absorption of water", "Production of insulin"], correct: 2 },
+    { question: "What type of bond holds the two strands of DNA together?", options: ["Ionic bond", "Hydrogen bond", "Covalent bond", "Peptide bond"], correct: 1 },
+    { question: "Which molecule stores genetic information?", options: ["DNA", "RNA", "Protein", "Lipids"], correct: 0 },
+    { question: "What is the name of the pigment found in plants that captures light energy?", options: ["Carotene", "Chlorophyll", "Melanin", "Xanthophyll"], correct: 1 },
+    { question: "What is the main function of white blood cells?", options: ["Clotting", "Transporting oxygen", "Fighting infection", "Carrying nutrients"], correct: 2 },
+    { question: "Which organ produces bile?", options: ["Pancreas", "Liver", "Stomach", "Kidney"], correct: 1 },
+    { question: "Which type of cell division produces gametes?", options: ["Mitosis", "Meiosis", "Binary Fission", "Budding"], correct: 1 },
+    { question: "What is the term for the process of converting sunlight into energy?", options: ["Photosynthesis", "Respiration", "Fermentation", "Transpiration"], correct: 0 },
+    { question: "What is the fluid that carries nutrients and gases in plants?", options: ["Xylem", "Phloem", "Sap", "Chloroplast"], correct: 1 },
+    { question: "What is the term for the process by which plants lose water through evaporation?", options: ["Photosynthesis", "Transpiration", "Osmosis", "Digestion"], correct: 1 },
+    { question: "What is the name of the process by which an organism becomes adapted to its environment?", options: ["Evolution", "Adaption", "Mutation", "Speciation"], correct: 1 },
+    { question: "What is the term for the visible part of the plant that produces seeds?", options: ["Leaf", "Root", "Flower", "Stem"], correct: 2 },
+    { question: "What is the name of the process by which plants reproduce sexually?", options: ["Fertilization", "Pollination", "Budding", "Mitosis"], correct: 1 },
+    { question: "What does ATP stand for?", options: ["Adenosine Triphosphate", "Amino Transfer Protein", "Adenine Tripeptide", "Acetylated Transport Protein"], correct: 0 },
+    { question: "Which class of animals do humans belong to?", options: ["Amphibians", "Mammals", "Reptiles", "Birds"], correct: 1 },
+    { question: "What is the term for the first stage of cell division?", options: ["Prophase", "Metaphase", "Anaphase", "Telophase"], correct: 0 },
+    { question: "What is the main function of the ribosome?", options: ["Protein synthesis", "Energy production", "Deoxyribonucleic acid synthesis", "Storage of nutrients"], correct: 0 },
+    { question: "Which of the following is not a type of connective tissue?", options: ["Cartilage", "Bone", "Muscle", "Blood"], correct: 2 },
+    { question: "Which organ is responsible for maintaining balance in the human body?", options: ["Cerebrum", "Cerebellum", "Medulla", "Thalamus"], correct: 1 },
+    { question: "What is the major component of the plasma membrane?", options: ["Proteins", "Lipids", "Carbohydrates", "Nucleic Acids"], correct: 1 },
+    { question: "What is the term for the outer covering of an insect's body?", options: ["Exoskeleton", "Endoskeleton", "Carapace", "Chitin"], correct: 0 },
+    { question: "What is the name of the molecule that carries energy within cells?", options: ["ATP", "ADP", "DNA", "RNA"], correct: 0 },
+    { question: "Which of the following is an example of a biome?", options: ["Desert", "Forest", "Tundra", "All of the above"], correct: 3 },
+    { question: "Which plant tissue is responsible for transporting water?", options: ["Xylem", "Phloem", "Parenchyma", "Collenchyma"], correct: 0 },
+    { question: "Which type of cell contains a nucleus?", options: ["Prokaryotic", "Eukaryotic", "Both", "Neither"], correct: 1 },
+    { question: "What is the term for the process by which an animal changes from one form to another?", options: ["Metamorphosis", "Regeneration", "Adaptation", "Fission"], correct: 0 },
+    { question: "Which organ is responsible for producing insulin?", options: ["Pancreas", "Liver", "Kidney", "Stomach"], correct: 0 },
+    { question: "Which part of the eye controls the amount of light entering?", options: ["Cornea", "Pupil", "Lens", "Retina"], correct: 1 },
+    { question: "What is the term for the genetic material in the nucleus of a cell?", options: ["Plasmid", "Chromosome", "Ribosome", "Lysosome"], correct: 1 },
+    { question: "Which blood cells are responsible for the immune response?", options: ["Red blood cells", "White blood cells", "Platelets", "Plasma"], correct: 1 },
+    { question: "Which type of genetic material is found in viruses?", options: ["DNA only", "RNA only", "Both DNA and RNA", "Neither"], correct: 0 },
+    { question: "What is the term for the breakdown of food in the stomach?", options: ["Digestion", "Absorption", "Excretion", "Ingestion"], correct: 0 },
+{ question: "What is the powerhouse of the cell?", options: ["Nucleus", "Mitochondria", "Endoplasmic Reticulum", "Golgi Apparatus"], correct: 1 },
+    { question: "Which organ is responsible for pumping blood throughout the body?", options: ["Lungs", "Kidney", "Heart", "Liver"], correct: 2 },
+    { question: "What part of the plant is responsible for absorbing water?", options: ["Root", "Stem", "Leaf", "Flower"], correct: 0 },
+    { question: "Which organelle is responsible for photosynthesis in plant cells?", options: ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"], correct: 1 },
+    { question: "What is the name of the protein that forms the cell's cytoskeleton?", options: ["Collagen", "Keratin", "Actin", "Myosin"], correct: 2 },
+    { question: "What type of blood cell helps in clotting?", options: ["Red blood cells", "White blood cells", "Platelets", "Plasma"], correct: 2 },
+    { question: "Which of the following is not a macromolecule?", options: ["Carbohydrate", "Protein", "Lipid", "Water"], correct: 3 },
+    { question: "Which of the following is a type of asexual reproduction?", options: ["Binary fission", "Cross-fertilization", "Pollination", "Mating"], correct: 0 },
+    { question: "What is the term for the exchange of gases in the lungs?", options: ["Respiration", "Photosynthesis", "Diffusion", "Osmosis"], correct: 0 },
+    { question: "Which structure is responsible for controlling what enters and leaves the cell?", options: ["Mitochondria", "Cell wall", "Nucleus", "Cell membrane"], correct: 3 },
+    { question: "What is the basic unit of life?", options: ["Molecule", "Atom", "Cell", "Organism"], correct: 2 },
+    { question: "What does DNA stand for?", options: ["Deoxyribonucleic acid", "Deoxyribose acid", "Dioxyribonucleic acid", "Dioxyribose acid"], correct: 0 },
+    { question: "Which of these is not a function of the skeletal system?", options: ["Support", "Movement", "Digestion", "Protection"], correct: 2 },
+    { question: "Which of the following is an example of a biotic factor?", options: ["Water", "Air", "Temperature", "Bacteria"], correct: 3 },
+    { question: "Which organ produces insulin?", options: ["Liver", "Kidney", "Pancreas", "Stomach"], correct: 2 },
+    { question: "Where does fertilization occur in humans?", options: ["Ovary", "Uterus", "Fallopian tube", "Cervix"], correct: 2 },
+    { question: "What is the process of converting glucose into energy in the presence of oxygen?", options: ["Anaerobic respiration", "Fermentation", "Cellular respiration", "Photosynthesis"], correct: 2 },
+    { question: "What is the function of red blood cells?", options: ["Fighting infection", "Clotting blood", "Transporting oxygen", "Producing hormones"], correct: 2 },
+    { question: "What type of cell division results in two identical daughter cells?", options: ["Mitosis", "Meiosis", "Fertilization", "Budding"], correct: 0 },
+    { question: "What is the part of the brain responsible for controlling involuntary actions?", options: ["Cerebrum", "Cerebellum", "Medulla", "Thalamus"], correct: 2 },
+    { question: "Which of the following is an organ?", options: ["Cell", "Tissue", "Liver", "Molecule"], correct: 2 },
+    { question: "What is the fluid-filled sac that surrounds and protects the embryo in amniotes?", options: ["Placenta", "Amniotic sac", "Chorion", "Umbilical cord"], correct: 1 },
+    { question: "What is the term for the process by which organisms adapt to their environment over time?", options: ["Evolution", "Adaptation", "Mutation", "Natural selection"], correct: 0 },
+    { question: "Which part of the plant conducts water from the roots to the leaves?", options: ["Phloem", "Xylem", "Cortex", "Cambium"], correct: 1 },
+    { question: "What type of bond is formed between two water molecules?", options: ["Covalent bond", "Ionic bond", "Hydrogen bond", "Peptide bond"], correct: 2 },
+    { question: "What is the term for the process by which plants lose water through their leaves?", options: ["Transpiration", "Evaporation", "Osmosis", "Photosynthesis"], correct: 0 },
+    { question: "Which of the following is the basic unit of heredity?", options: ["Gene", "Chromosome", "Cell", "Nucleotide"], correct: 0 },
+    { question: "Which process is responsible for the production of gametes?", options: ["Mitosis", "Meiosis", "Fission", "Budding"], correct: 1 },
+    { question: "What is the term for the protective covering of the nervous system?", options: ["Myelin sheath", "Synapse", "Axon", "Dendrite"], correct: 0 },
+    { question: "Which of the following is not a function of the digestive system?", options: ["Absorption of nutrients", "Breaking down food", "Excretion of waste", "Protection from infection"], correct: 3 },
+    { question: "What is the name of the process by which plants make their own food?", options: ["Photosynthesis", "Respiration", "Digestion", "Fermentation"], correct: 0 },
+    { question: "What is the main function of the circulatory system?", options: ["Transport oxygen", "Produce hormones", "Digest food", "Eliminate waste"], correct: 0 },
+    { question: "What is the term for a group of cells with a similar structure and function?", options: ["Tissue", "Organ", "System", "Organism"], correct: 0 },
+    { question: "Which of the following is not a type of muscle tissue?", options: ["Cardiac", "Skeletal", "Smooth", "Epithelial"], correct: 3 },
+    { question: "Which of the following is a characteristic of prokaryotic cells?", options: ["They have a nucleus", "They lack a nucleus", "They have membrane-bound organelles", "They have a mitochondria"], correct: 1 },
+    { question: "What is the term for the unit of heredity that controls a particular trait?", options: ["Allele", "Gene", "Chromosome", "Trait"], correct: 1 },
+    { question: "What is the term for the genetic material found in the nucleus of a cell?", options: ["Chromosome", "Gene", "DNA", "RNA"], correct: 2 },
+    { question: "Which of the following is an example of a genetic disorder?", options: ["Cystic fibrosis", "Asthma", "Diabetes", "Malaria"], correct: 0 },
+    { question: "What is the term for a change in the DNA sequence of a gene?", options: ["Mutation", "Meiosis", "Fertilization", "Replication"], correct: 0 },
+    { question: "What is the name of the process by which cells divide to form gametes?", options: ["Mitosis", "Meiosis", "Fission", "Budding"], correct: 1 },
+    { question: "What is the fluid that circulates in the human body and contains red and white blood cells?", options: ["Plasma", "Lymph", "Saliva", "Sweat"], correct: 0 },
+    { question: "Which part of the brain controls voluntary movements?", options: ["Medulla", "Cerebellum", "Thalamus", "Cerebrum"], correct: 3 },
+    { question: "What is the name of the molecule that carries oxygen in red blood cells?", options: ["Hemoglobin", "Insulin", "Glucagon", "Albumin"], correct: 0 },
+    { question: "What is the term for the process of cell division that produces two genetically identical daughter cells?", options: ["Mitosis", "Meiosis", "Fission", "Budding"], correct: 0 },
+    { question: "What is the term for the process by which an organism adapts to its environment?", options: ["Evolution", "Mutation", "Natural selection", "Adaptation"], correct: 3 },
+    { question: "Which of the following is an example of an autotroph?", options: ["Fungus", "Bacterium", "Plant", "Human"], correct: 2 },
+    { question: "What is the term for the process by which an animal increases its body size?", options: ["Growth", "Development", "Metamorphosis", "Differentiation"], correct: 0 },
+    { question: "What part of the plant is responsible for making food during photosynthesis?", options: ["Root", "Leaf", "Stem", "Flower"], correct: 1 },
+    { question: "What is the term for the process by which the body produces energy from stored fat?", options: ["Respiration", "Fermentation", "Metabolism", "Photosynthesis"], correct: 2 },
+    { question: "Which of the following is responsible for producing the body's hormones?", options: ["Endocrine system", "Nervous system", "Circulatory system", "Digestive system"], correct: 0 },
+    { question: "Which of the following is an example of an external stimulus?", options: ["Temperature", "Hunger", "Fatigue", "Pain"], correct: 0 },
+    { question: "What is the name of the protein that helps in muscle contraction?", options: ["Actin", "Collagen", "Keratin", "Myosin"], correct: 3 },
+    { question: "What is the term for the genetic makeup of an organism?", options: ["Phenotype", "Genotype", "Proteome", "Metagenome"], correct: 1 },
+    { question: "Which vitamin is essential for calcium absorption?", options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"], correct: 3 },
+    { question: "What is the term for the process of producing offspring?", options: ["Reproduction", "Growth", "Metabolism", "Development"], correct: 0 }
+        ];
+
+        let currentQuestionIndex = 0;
+
+        function loadQuestion() {
+            const questionData = quizData[currentQuestionIndex];
+            document.getElementById("question").innerText = questionData.question;
+            const optionsElement = document.getElementById("options");
+            optionsElement.innerHTML = "";
+
+            questionData.options.forEach((option, index) => {
+                const optionElement = document.createElement("div");
+                optionElement.classList.add("option");
+                optionElement.innerText = option;
+                optionElement.onclick = () => selectAnswer(index);
+                optionsElement.appendChild(optionElement);
+            });
+
+            document.getElementById("nextBtn").style.display = "none";
+        }
+
+        function selectAnswer(selectedIndex) {
+            const questionData = quizData[currentQuestionIndex];
+            const options = document.querySelectorAll(".option");
+            options.forEach((optionElement, index) => {
+                optionElement.style.backgroundColor = index === questionData.correct ? "#28a745" : (index === selectedIndex ? "#dc3545" : "");
+                optionElement.style.color = "white";
+                optionElement.style.pointerEvents = "none";
+            });
+            document.getElementById("nextBtn").style.display = "inline-block";
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizData.length) {
+                loadQuestion();
+            } else {
+                document.getElementById("quizContainer").innerHTML = "<h3 class='text-center'>You've completed the quiz!</h3>";
+            }
+        }
+
+        loadQuestion();
+    </script>
+</body>
+
+</html>
+

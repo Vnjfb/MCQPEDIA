@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+    <title>Physics MCQs - MCQ Pedia</title>
+    <meta name="description" content="Master the concepts of physics with multiple-choice questions on mechanics, optics, thermodynamics, and more.">
+    <meta name="keywords" content="physics MCQs, mechanics, optics, thermodynamics, competitive exams">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Pride - Physics Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f5f7;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #1d3557, #457b9d);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f1faee !important;
+        }
+
+        .nav-link {
+            color: #f1faee !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #a8dadc !important;
+        }
+
+        .dropdown-menu {
+            background-color: #1d3557;
+            border-radius: 0.5rem;
+        }
+
+        .dropdown-item {
+            color: #f1faee !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #457b9d;
+            color: #f1faee !important;
+        }
+
+        .hero-section {
+            background: #1d3557;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .subject-buttons {
+            margin-top: 30px;
+        }
+
+        .subject-button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .subject-button:hover {
+            background-color: #f1faee;
+            color: #1d3557;
+            transform: scale(1.1);
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #e9ecef;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="physics.html">Physics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Subject Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subjectsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Subjects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="subjectsDropdown">
+                            <li><a class="dropdown-item" href="polity.html">Polity</a></li>
+                            <li><a class="dropdown-item" href="geography.html">Geography</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="physics.html">Physics</a></li>
+                            <li><a class="dropdown-item" href="chemistry.html">Chemistry</a></li>
+                            <li><a class="dropdown-item" href="bio.html">Biology</a></li>
+                            <li><a class="dropdown-item" href="basic-electrical.html">Basic Electrical</a></li>
+                            <li><a class="dropdown-item" href="power-system.html">Power System</a></li>
+                            <li><a class="dropdown-item" href="measurement.html">Measurement</a></li>
+                            <li><a class="dropdown-item" href="basic-electronics.html">Basic Electronics</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to MCQ Pride</h1>
+        <p>Choose your subject and start learning with interactive quizzes!</p>
+        <div class="subject-buttons">
+            <button class="subject-button" style="background-color: #ff6347;" onclick="window.location.href='polity.html'">Polity</button>
+            <button class="subject-button" style="background-color: #1e90ff;" onclick="window.location.href='geography.html'">Geography</button>
+            <button class="subject-button" style="background-color: #32cd32;" onclick="window.location.href='history.html'">History</button>
+            <button class="subject-button" style="background-color: #ffda44;" onclick="window.location.href='physics.html'">Physics</button>
+            <button class="subject-button" style="background-color: #ff4500;" onclick="window.location.href='chemistry.html'">Chemistry</button>
+            <button class="subject-button" style="background-color: #ffd700;" onclick="window.location.href='bio.html'">Biology</button>
+            <button class="subject-button" style="background-color: #8a2be2;" onclick="window.location.href='basic-electrical.html'">Basic Electrical</button>
+            <button class="subject-button" style="background-color: #00ced1;" onclick="window.location.href='power-system.html'">Power System</button>
+            <button class="subject-button" style="background-color: #adff2f;" onclick="window.location.href='measurement.html'">Measurement</button>
+            <button class="subject-button" style="background-color: #20b2aa;" onclick="window.location.href='basic-electronics.html'">Basic Electronics</button>
+ <button class="subject-button" style="background-color: #ff6347;" onclick="window.location.href='electrical-utilization.html'">Electrical Utilization</button>
+
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container" id="quizContainer">
+        <h2 class="text-center">Physics Quiz</h2>
+        <div class="question" id="question">Loading question...</div>
+        <div id="options" class="mb-3">
+            <!-- Options will be dynamically loaded -->
+        </div>
+        <button class="btn btn-primary" id="nextBtn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About MCQ Pride</h5>
+                    <p>MCQ Pride offers top-notch quizzes to help you excel in competitive exams. Join us to access quality content for your success.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const quizData = [
+            { question: "What is the SI unit of force?", options: ["Newton", "Joule", "Watt", "Pascal"], correct: 0 },
+            { question: "Which of these is a vector quantity?", options: ["Speed", "Distance", "Velocity", "Time"], correct: 2 },
+            { question: "What is the acceleration due to gravity on Earth?", options: ["9.8 m/s²", "10 m/s²", "9.8 km/s²", "10 km/s²"], correct: 0 },
+            { question: "What is the unit of work?", options: ["Joule", "Newton", "Watt", "Pascal"], correct: 0 },
+            { question: "Who proposed the theory of relativity?", options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"], correct: 1 },
+            { question: "What is the speed of light?", options: ["300,000 km/s", "3,000 km/s", "300 km/s", "3 km/s"], correct: 0 },
+            { question: "What is the formula for kinetic energy?", options: ["1/2 mv²", "mv", "mgh", "1/2 kx²"], correct: 0 },
+            { question: "What is the law of conservation of energy?", options: ["Energy can be created", "Energy can be destroyed", "Energy can neither be created nor destroyed", "Energy is lost during work"], correct: 2 },
+            { question: "What is the primary source of energy on Earth?", options: ["The Moon", "The Sun", "The Earth", "Nuclear Fusion"], correct: 1 },
+            { question: "Which of the following is the correct formula for Ohm's Law?", options: ["V = IR", "P = IV", "V = I²R", "P = I²R"], correct: 0 },
+    { question: "What is the formula for kinetic energy?", options: ["KE = mv^2", "KE = 1/2 mv^2", "KE = mv", "KE = 1/2 mv"], correct: 1 },
+    { question: "What is the unit of work?", options: ["Newton", "Joule", "Watt", "Pascal"], correct: 1 },
+    { question: "Which principle explains the buoyant force on an object submerged in a fluid?", options: ["Pascal's Principle", "Archimedes' Principle", "Bernoulli's Principle", "Newton's Third Law"], correct: 1 },
+    { question: "What is the acceleration due to gravity on Earth?", options: ["9.8 m/s²", "10 m/s²", "8.9 m/s²", "11.2 m/s²"], correct: 0 },
+    { question: "What is the term for the rate of change of velocity?", options: ["Speed", "Force", "Acceleration", "Momentum"], correct: 2 },
+    { question: "What type of mirror is used in car headlights?", options: ["Plane", "Concave", "Convex", "Cylindrical"], correct: 1 },
+    { question: "Who discovered the electron?", options: ["James Chadwick", "J.J. Thomson", "Ernest Rutherford", "Niels Bohr"], correct: 1 },
+    { question: "What is the term for the resistance of a liquid to flow?", options: ["Density", "Viscosity", "Elasticity", "Surface tension"], correct: 1 },
+    { question: "Which device is used to measure electric current?", options: ["Voltmeter", "Ammeter", "Galvanometer", "Ohmmeter"], correct: 1 },
+    { question: "What is the magnetic effect of current called?", options: ["Faraday's Law", "Ampere's Law", "Oersted's Effect", "Ohm's Law"], correct: 2 },
+    { question: "What is the phenomenon of splitting white light into its components?", options: ["Diffraction", "Dispersion", "Reflection", "Interference"], correct: 1 },
+    { question: "What is the frequency range of audible sound?", options: ["20 Hz to 20 kHz", "10 Hz to 10 kHz", "50 Hz to 25 kHz", "100 Hz to 50 kHz"], correct: 0 },
+    { question: "Which particle is responsible for electricity in metals?", options: ["Protons", "Electrons", "Neutrons", "Ions"], correct: 1 },
+    { question: "What is the device used to store electric charge?", options: ["Inductor", "Capacitor", "Transformer", "Resistor"], correct: 1 },
+    { question: "What is the unit of pressure?", options: ["Pascal", "Newton", "Joule", "Watt"], correct: 0 },
+    { question: "What type of wave are electromagnetic waves?", options: ["Longitudinal", "Transverse", "Mechanical", "Surface"], correct: 1 },
+    { question: "What happens to the pressure of a gas if its volume decreases?", options: ["Increases", "Decreases", "Remains the same", "Doubles"], correct: 0 },
+    { question: "What is the term for the product of mass and velocity?", options: ["Momentum", "Force", "Energy", "Acceleration"], correct: 0 },
+    { question: "What is the unit of charge?", options: ["Coulomb", "Ampere", "Volt", "Ohm"], correct: 0 },
+    { question: "What is the term for the energy possessed by a body due to its position?", options: ["Kinetic energy", "Potential energy", "Mechanical energy", "Thermal energy"], correct: 1 },
+    { question: "What is the primary function of a transformer?", options: ["Convert AC to DC", "Step up or step down voltage", "Store charge", "Measure resistance"], correct: 1 },
+    { question: "Which law explains the expansion of gases when heated?", options: ["Boyle's Law", "Charles's Law", "Ohm's Law", "Newton's Law"], correct: 1 },
+    { question: "What is the term for the path of a projectile under gravity?", options: ["Linear", "Parabolic", "Circular", "Elliptical"], correct: 1 },
+    { question: "Who discovered the neutron?", options: ["James Chadwick", "J.J. Thomson", "Ernest Rutherford", "Niels Bohr"], correct: 0 },
+    { question: "What is the term for a material's opposition to the flow of electric current?", options: ["Resistance", "Conductivity", "Impedance", "Capacitance"], correct: 0 },
+    { question: "What is the unit of magnetic flux?", options: ["Tesla", "Weber", "Henry", "Farad"], correct: 1 },
+    { question: "What is the term for the heat required to change a solid to a liquid?", options: ["Specific heat", "Latent heat", "Thermal conductivity", "Heat capacity"], correct: 1 },
+    { question: "What is the critical angle in optics?", options: ["Angle of incidence for total internal reflection", "Angle of refraction in air", "Angle of reflection on a smooth surface", "Angle of incidence in a prism"], correct: 0 },
+    { question: "What is the SI unit of temperature?", options: ["Kelvin", "Celsius", "Fahrenheit", "Rankine"], correct: 0 },
+    { question: "What is the phenomenon where light bends around obstacles?", options: ["Diffraction", "Reflection", "Refraction", "Interference"], correct: 0 },
+{ question: "What is the speed of light in a vacuum?", options: ["300,000 km/s", "150,000 km/s", "1,000 km/s", "3,000 km/s"], correct: 0 },
+    { question: "Which scientist is known for the laws of motion?", options: ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "James Clerk Maxwell"], correct: 1 },
+    { question: "What is the term for the bending of light as it passes from one medium to another?", options: ["Reflection", "Refraction", "Diffraction", "Dispersion"], correct: 1 },
+    { question: "What is the unit of force?", options: ["Newton", "Joule", "Watt", "Pascal"], correct: 0 },
+    { question: "What is the term for the smallest particle of an element?", options: ["Atom", "Molecule", "Electron", "Proton"], correct: 0 },
+    { question: "What is the device used to detect electric charge?", options: ["Voltmeter", "Electroscope", "Ammeter", "Galvanometer"], correct: 1 },
+    { question: "What is the term for the amount of space an object occupies?", options: ["Volume", "Mass", "Density", "Area"], correct: 0 },
+    { question: "What is the formula for calculating power?", options: ["Power = Work x Time", "Power = Work / Time", "Power = Force x Distance", "Power = Energy x Time"], correct: 1 },
+    { question: "Which physical quantity is measured in ohms?", options: ["Resistance", "Current", "Voltage", "Power"], correct: 0 },
+    { question: "Which type of wave requires a medium to travel?", options: ["Electromagnetic wave", "Transverse wave", "Mechanical wave", "Longitudinal wave"], correct: 2 },
+    { question: "What is the term for the energy stored in a compressed spring?", options: ["Potential energy", "Kinetic energy", "Thermal energy", "Elastic potential energy"], correct: 3 },
+    { question: "What is the term for the rate at which work is done?", options: ["Force", "Power", "Energy", "Momentum"], correct: 1 },
+    { question: "What is the term for the time taken for one complete cycle of a wave?", options: ["Frequency", "Period", "Amplitude", "Wavelength"], correct: 1 },
+    { question: "What is the SI unit of energy?", options: ["Watt", "Joule", "Newton", "Volt"], correct: 1 },
+    { question: "Which gas is most commonly used in fluorescent light bulbs?", options: ["Neon", "Argon", "Oxygen", "Hydrogen"], correct: 1 },
+    { question: "What is the principle of a lever based on?", options: ["Newton's laws", "Law of Conservation of Energy", "Principle of Moments", "Bernoulli's principle"], correct: 2 },
+    { question: "What is the velocity of a body moving in a circle called?", options: ["Linear velocity", "Angular velocity", "Tangential velocity", "Rotational velocity"], correct: 2 },
+    { question: "What is the term for the distance between two consecutive crests of a wave?", options: ["Amplitude", "Frequency", "Period", "Wavelength"], correct: 3 },
+    { question: "What is the term for the ability of a material to return to its original shape after deformation?", options: ["Elasticity", "Plasticity", "Ductility", "Malleability"], correct: 0 },
+    { question: "Which law states that pressure in a fluid decreases as its speed increases?", options: ["Pascal's Law", "Archimedes' Principle", "Bernoulli's Principle", "Boyle's Law"], correct: 2 },
+    { question: "What is the term for the flow of electric charge?", options: ["Voltage", "Resistance", "Current", "Power"], correct: 2 },
+    { question: "What is the term for the change in frequency of a wave due to motion?", options: ["Doppler Effect", "Interference", "Diffraction", "Polarization"], correct: 0 },
+    { question: "What is the process of heat transfer through direct contact?", options: ["Conduction", "Convection", "Radiation", "Induction"], correct: 0 },
+    { question: "What is the term for the point where light rays converge after passing through a lens?", options: ["Focus", "Aperture", "Vertex", "Center of Curvature"], correct: 0 },
+    { question: "What is the relationship between voltage, current, and resistance?", options: ["Ohm's Law", "Faraday's Law", "Ampere's Law", "Kirchhoff's Law"], correct: 0 },
+    { question: "What is the energy of motion called?", options: ["Kinetic energy", "Potential energy", "Thermal energy", "Nuclear energy"], correct: 0 },
+    { question: "What is the term for a material that does not conduct electricity well?", options: ["Conductor", "Insulator", "Semiconductor", "Superconductor"], correct: 1 },
+    { question: "What is the term for the force that opposes motion between two surfaces in contact?", options: ["Drag", "Friction", "Tension", "Compression"], correct: 1 },
+    { question: "Which scientist formulated the theory of relativity?", options: ["Albert Einstein", "Isaac Newton", "Max Planck", "Niels Bohr"], correct: 0 },
+    { question: "What is the natural frequency of an object called?", options: ["Resonance", "Harmonic", "Pitch", "Tone"], correct: 0 },
+    { question: "What is the term for the transfer of heat through a fluid?", options: ["Convection", "Conduction", "Radiation", "Diffusion"], correct: 0 },
+    { question: "What is the smallest unit of a compound?", options: ["Atom", "Molecule", "Electron", "Ion"], correct: 1 },
+    { question: "What is the term for the amount of matter in an object?", options: ["Volume", "Mass", "Density", "Weight"], correct: 1 },
+    { question: "What is the force that pulls objects toward the center of the Earth?", options: ["Gravity", "Friction", "Tension", "Magnetism"], correct: 0 },
+    { question: "What is the term for the splitting of nuclei in a nuclear reaction?", options: ["Fission", "Fusion", "Decay", "Emission"], correct: 0 },
+    { question: "What is the SI unit of frequency?", options: ["Hertz", "Joule", "Newton", "Watt"], correct: 0 },
+    { question: "What is the process of energy transfer without a medium?", options: ["Conduction", "Convection", "Radiation", "Induction"], correct: 2 },
+    { question: "What is the device that converts sound energy into electrical energy?", options: ["Microphone", "Speaker", "Amplifier", "Transducer"], correct: 0 },
+    { question: "What is the property of an object to resist changes in motion?", options: ["Inertia", "Momentum", "Force", "Acceleration"], correct: 0 },
+    { question: "What is the force exerted by a fluid on an object submerged in it?", options: ["Buoyant force", "Drag force", "Normal force", "Frictional force"], correct: 0 },
+{ question: "What is the term for the point where an object's mass is concentrated?", options: ["Center of Mass", "Center of Gravity", "Centroid", "Moment of Inertia"], correct: 1 },
+    { question: "What is the primary source of energy for the Sun?", options: ["Nuclear Fission", "Nuclear Fusion", "Combustion", "Radiation"], correct: 1 },
+    { question: "What is the unit of electric charge?", options: ["Volt", "Ampere", "Coulomb", "Watt"], correct: 2 },
+    { question: "What is the term for the number of waves passing a point per second?", options: ["Amplitude", "Frequency", "Period", "Wavelength"], correct: 1 },
+    { question: "Which device is used to store electric charge?", options: ["Resistor", "Capacitor", "Inductor", "Transformer"], correct: 1 },
+    { question: "What is the acceleration of an object in free fall near Earth's surface?", options: ["9.8 m/s²", "10 m/s²", "8 m/s²", "9 m/s"], correct: 0 },
+    { question: "What is the term for the energy possessed by a body due to its position?", options: ["Kinetic Energy", "Potential Energy", "Thermal Energy", "Elastic Energy"], correct: 1 },
+    { question: "What is the term for the natural tendency of an object to resist a change in motion?", options: ["Momentum", "Inertia", "Force", "Acceleration"], correct: 1 },
+    { question: "What type of lens is used to correct nearsightedness?", options: ["Convex Lens", "Concave Lens", "Plano Lens", "Cylindrical Lens"], correct: 1 },
+    { question: "What is the SI unit of pressure?", options: ["Pascal", "Newton", "Joule", "Watt"], correct: 0 },
+    { question: "What is the term for the distance covered by a wave in one complete cycle?", options: ["Amplitude", "Frequency", "Period", "Wavelength"], correct: 3 },
+    { question: "What is the formula for kinetic energy?", options: ["KE = mv", "KE = 1/2 mv²", "KE = mgh", "KE = Fd"], correct: 1 },
+    { question: "What is the term for the property of a substance to allow light to pass through?", options: ["Opacity", "Transparency", "Reflectivity", "Absorptivity"], correct: 1 },
+    { question: "What is the term for the smallest unit of a chemical element?", options: ["Electron", "Atom", "Molecule", "Proton"], correct: 1 },
+    { question: "What is the first law of thermodynamics?", options: ["Energy cannot be created or destroyed", "Entropy always increases", "For every action, there is an equal and opposite reaction", "Force equals mass times acceleration"], correct: 0 },
+    { question: "What is the phenomenon of splitting white light into its component colors?", options: ["Reflection", "Refraction", "Dispersion", "Diffraction"], correct: 2 },
+    { question: "What is the SI unit of magnetic field strength?", options: ["Tesla", "Weber", "Henry", "Gauss"], correct: 0 },
+    { question: "What is the term for a material that allows heat or electricity to pass through it easily?", options: ["Conductor", "Insulator", "Semiconductor", "Dielectric"], correct: 0 },
+    { question: "Which type of wave has particles moving perpendicular to the direction of wave propagation?", options: ["Transverse Wave", "Longitudinal Wave", "Surface Wave", "Mechanical Wave"], correct: 0 },
+    { question: "What is the term for the force that opposes motion in a fluid?", options: ["Friction", "Drag", "Buoyancy", "Lift"], correct: 1 },
+    { question: "What is the angle of incidence equal to in a perfect reflection?", options: ["Angle of Refraction", "Angle of Reflection", "Critical Angle", "Normal Angle"], correct: 1 },
+    { question: "What is the term for the measure of disorder in a system?", options: ["Enthalpy", "Entropy", "Energy", "Work"], correct: 1 },
+    { question: "What is the SI unit of work?", options: ["Joule", "Newton", "Watt", "Pascal"], correct: 0 },
+    { question: "What is the principle behind hydraulic systems?", options: ["Pascal's Principle", "Archimedes' Principle", "Bernoulli's Principle", "Boyle's Law"], correct: 0 },
+    { question: "Which law explains the buoyant force on an object submerged in a fluid?", options: ["Pascal's Law", "Archimedes' Principle", "Bernoulli's Principle", "Newton's Law"], correct: 1 },
+    { question: "What is the process of light being scattered by particles smaller than its wavelength?", options: ["Reflection", "Refraction", "Rayleigh Scattering", "Dispersion"], correct: 2 },
+    { question: "What is the term for the force acting on a charged particle in a magnetic field?", options: ["Electric Force", "Magnetic Force", "Gravitational Force", "Centripetal Force"], correct: 1 },
+    { question: "What is the term for the bending of waves around obstacles?", options: ["Diffraction", "Interference", "Reflection", "Refraction"], correct: 0 },
+    { question: "What is the effect of temperature on the speed of sound in a medium?", options: ["Speed increases with temperature", "Speed decreases with temperature", "Speed remains constant", "Speed depends only on pressure"], correct: 0 },
+    { question: "What is the formula for Ohm's Law?", options: ["V = IR", "P = IV", "Q = CV", "F = qE"], correct: 0 },
+    { question: "What is the device that generates electricity using mechanical energy?", options: ["Motor", "Generator", "Battery", "Transformer"], correct: 1 },
+    { question: "What is the term for the phenomenon where an induced current opposes the change that caused it?", options: ["Induction", "Lenz's Law", "Faraday's Law", "Ohm's Law"], correct: 1 },
+    { question: "Which force acts between any two masses in the universe?", options: ["Gravitational Force", "Electromagnetic Force", "Nuclear Force", "Frictional Force"], correct: 0 },
+    { question: "What is the term for the time taken by one wave to pass a fixed point?", options: ["Frequency", "Period", "Wavelength", "Amplitude"], correct: 1 },
+    { question: "Which property of a material opposes the flow of electric current?", options: ["Resistance", "Capacitance", "Inductance", "Impedance"], correct: 0 },
+    { question: "What is the term for the transfer of heat by electromagnetic waves?", options: ["Conduction", "Convection", "Radiation", "Reflection"], correct: 2 },
+    { question: "What is the unit of power?", options: ["Watt", "Joule", "Newton", "Ampere"], correct: 0 },
+    { question: "Which scientist developed the laws of planetary motion?", options: ["Kepler", "Newton", "Einstein", "Copernicus"], correct: 0 },
+    { question: "What is the term for the property of a wave that describes its height?", options: ["Amplitude", "Frequency", "Wavelength", "Period"], correct: 0 },
+    { question: "What is the term for the force that keeps an object moving in a circle?", options: ["Centrifugal Force", "Centripetal Force", "Frictional Force", "Gravitational Force"], correct: 1 },
+    { question: "What is the unit of electric potential?", options: ["Watt", "Coulomb", "Volt", "Ampere"], correct: 2 },
+    { question: "What is the name of the theory that explains the origin of the universe?", options: ["Big Bang Theory", "Steady State Theory", "String Theory", "Quantum Theory"], correct: 0 },
+    { question: "What is the term for the resistance to motion through a fluid?", options: ["Viscosity", "Drag", "Friction", "Tension"], correct: 0 },
+    { question: "What is the device used to measure atmospheric pressure?", options: ["Barometer", "Hygrometer", "Thermometer", "Manometer"], correct: 0 }
+        ];
+
+        let currentQuestionIndex = 0;
+
+        function loadQuestion() {
+            const questionData = quizData[currentQuestionIndex];
+            document.getElementById("question").innerText = questionData.question;
+            const optionsElement = document.getElementById("options");
+            optionsElement.innerHTML = "";
+
+            questionData.options.forEach((option, index) => {
+                const optionElement = document.createElement("div");
+                optionElement.classList.add("option");
+                optionElement.innerText = option;
+                optionElement.onclick = () => selectAnswer(index);
+                optionsElement.appendChild(optionElement);
+            });
+
+            document.getElementById("nextBtn").style.display = "none";
+        }
+
+        function selectAnswer(selectedIndex) {
+            const questionData = quizData[currentQuestionIndex];
+            const options = document.querySelectorAll(".option");
+            options.forEach((optionElement, index) => {
+                optionElement.style.backgroundColor = index === questionData.correct ? "#28a745" : (index === selectedIndex ? "#dc3545" : "");
+                optionElement.style.color = "white";
+                optionElement.style.pointerEvents = "none";
+            });
+            document.getElementById("nextBtn").style.display = "inline-block";
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizData.length) {
+                loadQuestion();
+            } else {
+                document.getElementById("quizContainer").innerHTML = "<h3 class='text-center'>You've completed the quiz!</h3>";
+            }
+        }
+
+        loadQuestion();
+    </script>
+</body>
+
+</html>
+
